@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                green:'green',
+                inputBg:'white',
+                black:'black'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class="p-2 border-2 text-xl text-center flex flex-col items-center">
+        <h2>გულების გათამაშება</h2>
+        <input type="text" placeholder="პირადი ნომერი" class="text-center border-2 rounded-xl m-2 p-2 bg-inputBg text-black" id="pn"> </input>
+        <input type="text" placeholder="მობილური ნომერი" class="text-center border-2 rounded-xl m-2 p-2" id="phn"> </input>
+        <button class="p-2 m-2 bg-green rounded-xl text-white" id="enter"> შესვლა</button>
+        <input type="text" placeholder="კოდი" class="text-center border-2 rounded-xl m-2 p-2" id="verify"> </input>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
